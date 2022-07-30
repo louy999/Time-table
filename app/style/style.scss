@@ -1,0 +1,236 @@
+// font google
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap");
+// extrnal file inside all color
+@import "./color";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+#continer {
+  //   background-color: $White;
+
+  nav {
+    background-color: $Dark-blue;
+    height: 100vh;
+    width: 170px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    z-index: 89456123895620;
+    ul {
+      li {
+        list-style-type: none;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $White;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-bottom: 100px;
+        &.active {
+          padding: 10px;
+          border-radius: 10px;
+          background-color: $White;
+          position: relative;
+          left: 30px;
+          color: $Dark-blue;
+          box-shadow: 9px 0px 10px -1px white;
+          font-weight: 700;
+          font-style: italic;
+        }
+        i {
+          font-size: 20px;
+          color: $Dark-blue;
+        }
+      }
+    }
+  }
+  main {
+    .contanier-todo-lis {
+      width: 500px;
+      margin: 20px auto;
+      > img {
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+      }
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+          font-weight: 700;
+          color: $White;
+          text-transform: uppercase;
+        }
+        img {
+          width: 25px;
+          height: 30px;
+        }
+      }
+      div.input {
+        background-color: $White;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        .circle-input {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border: 1px solid $Very-Dark-Blue;
+          cursor: pointer;
+        }
+        input {
+          width: 90%;
+          outline: none;
+          padding: 5px;
+          border: none;
+          color: $Very-Dark-Blue;
+        }
+      }
+      .todo-list {
+        width: 100%;
+        background-color: $White;
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 5px;
+        box-shadow: 5px 5px 5px $Very-Light-Grayish-Blue;
+        #todo {
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid $Very-Dark-Blue;
+          padding: 10px;
+          justify-content: space-between;
+          .cross {
+            cursor: pointer;
+          }
+          .circle-todo {
+            margin-right: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid $Very-Dark-Blue;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+            img.img-check {
+              background-image: $Check-Background;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+            }
+          }
+          > div {
+            display: flex;
+          }
+        }
+        .status {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          text-transform: capitalize;
+          padding: 10px 5px;
+          .act {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            width: 45%;
+            cursor: pointer;
+            .active {
+              color: $Bright-Blue;
+            }
+          }
+        }
+      }
+    }
+  }
+  .completed {
+    opacity: 0.5;
+    color: $Dark-blue;
+  }
+}
+
+/////////////////////////
+#continar-timer {
+  .border {
+    border: 1px solid black;
+    margin: 10px 5px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  width: 600px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  // flex-wrap: wrap;
+  input[type="number"] {
+    width: 50px;
+    height: 20px;
+  }
+  input[type="button"] {
+    background-color: $Very-Dark-Blue;
+    color: $White;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    left: 50px;
+    &:active {
+      background-color: $White;
+      color: $Dark-blue;
+    }
+  }
+  .con-timer {
+    background-color: $Very-Dark-Blue;
+    color: $White;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 15px 0;
+    position: relative;
+    left: 50px;
+    > div {
+      font-size: 30px;
+    }
+    span {
+      margin: 0 5px;
+    }
+  }
+  input#title {
+    border-radius: 10px;
+    margin: 6px;
+    padding: 5px;
+    border: none;
+    background-color: $Very-Dark-Blue;
+    color: $White;
+    outline: none;
+  }
+  .puse,
+  .play,
+  .reset {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    left: 50px;
+    &:hover {
+      color: $Bright-Blue;
+    }
+  }
+}

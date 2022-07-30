@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "normalize.css": "^8.0.1"
+  }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalize file  -->
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+    <!-- css file for style  -->
+    <link rel="stylesheet" href="./app/style/style.css" />
+    <!-- kit font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/4d905c5a1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="continer">
+      <nav>
+        <ul>
+          <li id="todo">
+            <i class="fa-solid fa-clipboard-list"></i> todo list
+          </li>
+          <li id="tabel"><i class="fa-solid fa-table"></i> table</li>
+          <li id="timer" class="active">
+            <i class="fa-solid fa-stopwatch-20"></i> timer
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="contanier-todo-lis">
+          <img src="../images/bg-desktop-light.jpg" alt="" srcset="" />
+          <div class="title">
+            <h1>todo</h1>
+            <img src="../images/icon-moon.svg" alt="" />
+          </div>
+          <div class="input">
+            <div class="circle-input"></div>
+            <input type="text" name="" placeholder="Cereate a new todo" id="" />
+          </div>
+          <div class="todo-list">
+            <div class="list"></div>
+            <div class="status">
+              <div class="itm">0 items left</div>
+              <div class="act">
+                <div id="all" class="active">all</div>
+                <div id="active">active</div>
+                <div id="completed">completed</div>
+              </div>
+              <div class="clear">clear completed</div>
+            </div>
+          </div>
+        </div>
+        <!-- //////////////////// -->
+        <div id="continer-table"></div>
+        <!-- //////////////////// -->
+        <div id="continar-timer">
+          <div class="con-st">
+            <div class="chouse">
+              <input type="button" class="sw" value="stop watch" />
+            </div>
+            <div class="border">
+              <label for="title">title:</label>
+              <input type="text" name="" id="title" />
+              <div class="con-timer">
+                <div class="hour">00</div>
+                <span>:</span>
+                <div class="min">00</div>
+                <span>:</span>
+                <div class="sec">00</div>
+              </div>
+              <div class="stat">
+                <div class="puse">puse <i class="fa-solid fa-pause"></i></div>
+                <div class="play">play <i class="fa-solid fa-play"></i></div>
+                <div class="reset">reset <i class="fa-solid fa-play"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="con-cd">
+            <div class="chouse">
+              <input type="button" class="cd" value="count down" />
+            </div>
+            <div class="border">
+              <label for="title">title:</label>
+              <input type="text" name="" id="title" />
+              <div class="stat">
+                <div class="con-timer">
+                  <div class="hour">00</div>
+                  <span>:</span>
+                  <div class="min">00</div>
+                  <span>:</span>
+                  <div class="sec">00</div>
+                </div>
+                <label for="hour">hour:</label>
+                <input type="number" name="" class="hour" id="hour" />
+                <label for="min">min:</label>
+                <input type="number" name="" class="min" id="min" />
+                <label for="sec">sec:</label>
+                <input type="number" name="" id="sec" class="sec" />
+                <div class="stat">
+                  <div class="puse">puse <i class="fa-solid fa-pause"></i></div>
+                  <div class="play">play <i class="fa-solid fa-play"></i></div>
+                  <div class="reset">
+                    reset <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./app/navbar.js"></script>
+    <script src="./app/todo.js"></script>
+    <script src="./app/table.js"></script>
+    <script src="./app/timer.js"></script>
+  </body>
+</html>
